@@ -71330,6 +71330,19 @@
 	icon_state = "dark"
 	},
 /area/station/medical/morgue)
+"pjw" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/titanium/glass,
+/obj/docking_port/stationary{
+	name = "Cyberiad Arrivals Shuttle";
+	dir = 1;
+	dwidth = 6;
+	height = 8;
+	width = 18;
+	id = "arrivals shuttles"
+	},
+/turf/simulated/floor/mineral/titanium,
+/area/shuttle/arrival/station)
 "pko" = (
 /obj/structure/chair/stool{
 	dir = 8
@@ -98399,7 +98412,7 @@ nfS
 jyO
 jyO
 jyO
-pYo
+pjw
 hCZ
 dRr
 hCZ

@@ -2664,6 +2664,20 @@
 	},
 /turf/simulated/floor/plasteel/dark,
 /area/syndicate_mothership)
+"jE" = (
+/obj/docking_port/stationary{
+	name = "Cyberiad Arrivals Shuttle";
+	dir = 4;
+	dwidth = 6;
+	height = 8;
+	width = 18
+	},
+/turf/space,
+/area/space/centcomm)
+"jF" = (
+/obj/effect/landmark/spawner/late/crew,
+/turf/simulated/floor/plasteel,
+/area/space/centcomm)
 "jG" = (
 /obj/structure/table/reinforced,
 /obj/item/ashtray/glass,
@@ -5525,6 +5539,12 @@
 /obj/structure/lattice,
 /turf/space,
 /area/space/nearstation/centcom)
+"tM" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/external/glass,
+/obj/effect/mapping_helpers/airlock/autoname,
+/turf/simulated/floor/plasteel,
+/area/space/centcomm)
 "tN" = (
 /obj/machinery/door/window/classic/normal{
 	dir = 1
@@ -6803,6 +6823,9 @@
 	icon_state = "cafeteria"
 	},
 /area/tdome/tdomeobserve)
+"yS" = (
+/turf/simulated/floor/plasteel,
+/area/space/centcomm)
 "yX" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/crayons,
@@ -10778,6 +10801,9 @@
 "MJ" = (
 /turf/simulated/floor/plating/airless,
 /area/space/nearstation/centcom)
+"MK" = (
+/turf/simulated/wall/indestructible/fakeglass,
+/area/space/centcomm)
 "ML" = (
 /obj/machinery/flasher{
 	id = "tdomeflash";
@@ -35356,20 +35382,20 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aN
 aN
 aN
@@ -35613,20 +35639,20 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+aa
+jF
+jF
+jF
+jF
+jF
+jF
+jF
+jF
+jF
+jF
+jF
+jF
+aa
 aN
 aN
 aN
@@ -35870,20 +35896,20 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+aa
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+aa
 aN
 aN
 aN
@@ -36127,20 +36153,20 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+aa
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+aa
 aN
 aN
 aN
@@ -36384,20 +36410,20 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+aa
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+yS
+aa
 aN
 aN
 aN
@@ -36641,20 +36667,20 @@ aN
 aN
 aN
 aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
-aN
+aa
+aa
+tM
+aa
+MK
+MK
+MK
+MK
+aa
+tM
+aa
+aa
+aa
+aa
 aN
 aN
 aN
@@ -36900,7 +36926,7 @@ aN
 aN
 aN
 aN
-aN
+jE
 aN
 aN
 aN
