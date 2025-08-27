@@ -71335,11 +71335,10 @@
 /obj/machinery/door/airlock/titanium/glass,
 /obj/docking_port/stationary{
 	name = "Cyberiad Arrivals Shuttle";
-	dir = 1;
 	dwidth = 6;
 	height = 8;
 	width = 18;
-	id = "arrivals shuttles"
+	id = "arrivals shuttle"
 	},
 /turf/simulated/floor/mineral/titanium,
 /area/shuttle/arrival/station)
