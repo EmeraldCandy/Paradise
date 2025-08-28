@@ -31,8 +31,11 @@ SUBSYSTEM_DEF(arrivals)
 	offline_implications = "Arrivals shuttle will no longer transmit. Setup alternative travel."
 	cpu_display = SS_CPUDISPLAY_LOW
 
+	/// holds the shuttle dock
+	var/obj/docking_port/mobile/shuttle_dock
 	/// holds the arrivals dock port
-	var/obj/docking_port/current_dock
+	var/obj/docking_port/mobile/current_dock
+	/// The ID of the arrivals shuttle we're using
 	var/shuttleId = "arrivals_shuttle"
 
 	/// Holds the time until the next launch
@@ -44,8 +47,8 @@ SUBSYSTEM_DEF(arrivals)
 /datum/controller/subsystem/arrivals/fire(resumed)
 	if(world.time > cooldown_time)
 		cooldown_time = world.time + TIME_BETWEEN_MOVES
-		current_dock = SSshuttle.getDock(shuttleId)
-		if(current_dock.id == "arrivals_dock")
+		current_dock = SSshuttle.getShuttle(shuttleId)
+		if(current_dock.id == "arrivals_shuttle")
 			SSshuttle.moveShuttle(shuttleId, "centcomm_dock", TRUE, usr)
 		else
 			SSshuttle.moveShuttle(shuttleId, "arrivals_dock", TRUE, usr)
