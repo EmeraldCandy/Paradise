@@ -2665,12 +2665,8 @@
 /turf/simulated/floor/plasteel/dark,
 /area/syndicate_mothership)
 "jE" = (
-/obj/docking_port/stationary{
-	name = "Cyberiad Arrivals Shuttle";
-	dir = 4;
-	dwidth = 6;
-	height = 8;
-	width = 18
+/obj/docking_port/stationary/arrivals/centcomm{
+	dir = 4
 	},
 /turf/space,
 /area/space/centcomm)
@@ -12290,6 +12286,12 @@
 /obj/structure/chair,
 /turf/simulated/floor/plasteel/dark,
 /area/centcom/specops)
+"Ry" = (
+/obj/machinery/computer/shuttle/arrivals{
+	dir = 8
+	},
+/turf/simulated/floor/plasteel,
+/area/space/centcomm)
 "Rz" = (
 /obj/structure/table,
 /turf/simulated/floor/mineral/plastitanium/red,
@@ -36415,7 +36417,7 @@ yS
 yS
 yS
 yS
-yS
+Ry
 yS
 yS
 yS

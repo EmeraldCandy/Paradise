@@ -61916,6 +61916,9 @@
 /area/station/security/permabrig)
 "kES" = (
 /obj/effect/turf_decal/stripes/corner,
+/obj/machinery/computer/shuttle/arrivals{
+	dir = 4
+	},
 /turf/simulated/floor/plasteel{
 	icon_state = "arrival"
 	},
@@ -71333,13 +71336,7 @@
 "pjw" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/titanium/glass,
-/obj/docking_port/stationary{
-	name = "Cyberiad Arrivals Shuttle";
-	dwidth = 6;
-	height = 8;
-	width = 18;
-	id = "arrivals shuttle"
-	},
+/obj/docking_port/stationary/arrivals/station/cyberiad,
 /turf/simulated/floor/mineral/titanium,
 /area/shuttle/arrival/station)
 "pko" = (
@@ -85886,6 +85883,12 @@
 	icon_state = "dark"
 	},
 /area/station/medical/morgue)
+"wwc" = (
+/obj/machinery/computer/shuttle/arrivals{
+	dir = 4
+	},
+/turf/simulated/floor/mineral/titanium/blue,
+/area/shuttle/arrival/station)
 "wwz" = (
 /obj/machinery/firealarm/directional/west,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -98149,7 +98152,7 @@ hVy
 cqY
 aXr
 aXs
-aXs
+wwc
 pCA
 aXs
 aXs
