@@ -61916,9 +61916,6 @@
 /area/station/security/permabrig)
 "kES" = (
 /obj/effect/turf_decal/stripes/corner,
-/obj/machinery/computer/shuttle/arrivals{
-	dir = 4
-	},
 /turf/simulated/floor/plasteel{
 	icon_state = "arrival"
 	},
@@ -71337,6 +71334,7 @@
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/titanium/glass,
 /obj/docking_port/stationary/arrivals/station/cyberiad,
+/obj/docking_port/mobile/arrivals,
 /turf/simulated/floor/mineral/titanium,
 /area/shuttle/arrival/station)
 "pko" = (
@@ -85883,12 +85881,6 @@
 	icon_state = "dark"
 	},
 /area/station/medical/morgue)
-"wwc" = (
-/obj/machinery/computer/shuttle/arrivals{
-	dir = 4
-	},
-/turf/simulated/floor/mineral/titanium/blue,
-/area/shuttle/arrival/station)
 "wwz" = (
 /obj/machinery/firealarm/directional/west,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -98152,7 +98144,7 @@ hVy
 cqY
 aXr
 aXs
-wwc
+aXs
 pCA
 aXs
 aXs

@@ -2,43 +2,26 @@
 #define TIME_BETWEEN_MOVES 1 MINUTES
 
 /obj/docking_port/stationary/arrivals
-	id = "centcomm_dock"
+	id = "Do not  use"
 	dwidth = 6
 	height = 20
 	width = 20
 
 /obj/docking_port/mobile/arrivals
-
-/obj/docking_port/mobile/arrivals/centcomm
 	id = "arrivals_shuttle"
+	dwidth = 6
+	height = 20
+	width = 20
 
-/obj/docking_port/stationary/arrivals/centcomm/register()
-	if(!..())
-		return FALSE
-	///SSarrivals.centcomm_port = src
-	return TRUE
+/obj/docking_port/stationary/arrivals/centcomm
+	id = "centcomm_dock"
 
 /obj/docking_port/stationary/arrivals/station
 	id = "arrivals_dock"
 
-/obj/docking_port/stationary/arrivals/station/register()
-	if(!..())
-		return FALSE
-	///SSarrivals.station_port = src
-	return TRUE
-
 /obj/docking_port/stationary/arrivals/station/cyberiad
 	name = "Cyberiad Arrivals Shuttle"
-	dwidth = 6
-	height = 8
-	width = 18
 
-/obj/machinery/computer/shuttle/arrivals
-	name = "arrivals shuttle computer"
-	shuttleId = "arrivals_shuttle"
-	possible_destinations = "centcomm_dock;arrivals_dock"
-
-/*
 SUBSYSTEM_DEF(arrivals)
 	name = "Arrivals Shuttle"
 	wait = 20 SECONDS
@@ -49,8 +32,8 @@ SUBSYSTEM_DEF(arrivals)
 	cpu_display = SS_CPUDISPLAY_LOW
 
 	/// holds the arrivals dock port
-	var/obj/docking_port/stationary/transit/station_port
-	var/obj/docking_port/stationary/transit/centcomm_port
+	var/obj/docking_port/current_dock
+	var/shuttleId = "arrivals_shuttle"
 
 	/// Holds the time until the next launch
 	var/cooldown_time
@@ -61,5 +44,8 @@ SUBSYSTEM_DEF(arrivals)
 /datum/controller/subsystem/arrivals/fire(resumed)
 	if(world.time > cooldown_time)
 		cooldown_time = world.time + TIME_BETWEEN_MOVES
-		SSshuttle.moveShuttle()
-*/
+		current_dock = SSshuttle.getDock(shuttleId)
+		if(current_dock.id == "arrivals_dock")
+			SSshuttle.moveShuttle(shuttleId, "centcomm_dock", TRUE, usr)
+		else
+			SSshuttle.moveShuttle(shuttleId, "arrivals_dock", TRUE, usr)
