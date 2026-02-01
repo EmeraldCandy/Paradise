@@ -34747,7 +34747,7 @@
 "fbi" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/effect/mapping_helpers/airlock/autoname,
-/obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
+/obj/effect/mapping_helpers/airlock/access/all/science/xenobio,
 /turf/simulated/floor/plasteel/white,
 /area/station/maintenance/asmaint)
 "fbq" = (
@@ -45058,6 +45058,8 @@
 /obj/structure/table,
 /obj/item/hatchet,
 /obj/effect/spawner/random/maintenance,
+/obj/item/seeds/poppy,
+/obj/item/seeds/harebell,
 /turf/simulated/floor/grass/no_creep,
 /area/station/maintenance/abandoned_garden)
 "iDe" = (
