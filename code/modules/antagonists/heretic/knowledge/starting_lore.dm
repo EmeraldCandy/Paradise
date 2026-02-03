@@ -358,7 +358,6 @@ GLOBAL_LIST_INIT(heretic_start_knowledge, initialize_starting_knowledge())
 	name = "Rite of Sunset's End"
 	desc = "Sacrifice a single point of knowledge to shatter all of your summoned blades. You will be unable to summon more for a while, but afterwards you will have all your potential summons again."
 	is_starting_knowledge = TRUE
-	cost = 0
 	priority = MAX_KNOWLEDGE_PRIORITY - 2 // Important, but shouldnt get in the way of more important rituals.
 	abstract_parent_type = /datum/heretic_knowledge/destroy_knives
 	required_atoms = list()
