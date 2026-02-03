@@ -168,7 +168,18 @@ GLOBAL_LIST_INIT(heretic_start_knowledge, initialize_starting_knowledge())
 	our_new_heart.AddComponent(/datum/component/living_heart)
 	to_chat(user, SPAN_WARNING("You feel your [our_new_heart.name] begin pulse faster and faster as it awakens!"))
 	playsound(user, 'sound/misc/demon_consume.ogg', 50, TRUE)
-	return TRUE
+
+	// Give them their knowledge button if they dont have one.
+	if(!find_menu(user, our_heretic))
+		QDEL_NULL(our_heretic.our_menu)
+		our_heretic.our_menu = new()
+		our_heretic.our_menu.Grant(user)
+
+/datum/heretic_knowledge/living_heart/proc/find_menu(mob/living/user, datum/antagonist/heretic/heretic)
+	for(var/datum/action/A in user.actions)
+		if(A == heretic.our_menu)
+			return TRUE
+	return FALSE
 
 /// Checks if the passed heart is a valid heart to become a living heart
 /datum/heretic_knowledge/living_heart/proc/is_valid_heart(obj/item/organ/new_heart)
