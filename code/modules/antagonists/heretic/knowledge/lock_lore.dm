@@ -116,9 +116,8 @@
 			continue
 		var/obj/item/card/id/heretic/heretic_card = new result(our_turf)
 		for(var/obj/item/card/id/card in selected_atoms)
-			if(!isnull(card))
-				heretic_card.eat_card(card, user)
-				selected_atoms -= card
+			heretic_card.eat_card(card, user)
+			selected_atoms -= card
 
 /datum/heretic_knowledge/mark/lock_mark
 	name = "Mark of Lock"
