@@ -364,7 +364,8 @@ GLOBAL_LIST_INIT(heretic_start_knowledge, initialize_starting_knowledge())
 	research_tree_icon_path = 'icons/obj/weapons/khopesh.dmi'
 	research_tree_icon_state = "eldritch_blade"
 
-	var/datum/heretic_knowledge/limited_amount/starting/knife_knowledge // Holds our knife knowledge so we dont have to search for it every time.
+	/// Holds our knife knowledge so we dont have to search for it every time.
+	var/datum/heretic_knowledge/limited_amount/starting/knife_knowledge
 
 /datum/heretic_knowledge/destroy_knives/can_be_invoked(datum/antagonist/heretic/invoker)
 	if(!knife_knowledge)
