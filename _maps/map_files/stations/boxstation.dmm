@@ -87702,6 +87702,10 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/hallway/primary/aft/north)
+"wID" = (
+/obj/machinery/poolcontroller/invisible,
+/turf/simulated/floor/plasteel/reactor_pool,
+/area/station/engineering/engine/reactor)
 "wJl" = (
 /obj/machinery/door/firedoor{
 	dir = 4
@@ -120343,7 +120347,7 @@ wva
 oAS
 rCs
 qHc
-nxq
+wID
 nxq
 itF
 fbR

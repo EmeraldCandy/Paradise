@@ -84717,6 +84717,10 @@
 	},
 /turf/simulated/floor/catwalk,
 /area/station/maintenance/fsmaint2)
+"vDJ" = (
+/obj/machinery/poolcontroller/invisible,
+/turf/simulated/floor/plasteel/reactor_pool,
+/area/station/engineering/engine/reactor)
 "vDP" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
@@ -139217,7 +139221,7 @@ rdm
 ujj
 leU
 jMX
-jMX
+vDJ
 opU
 opU
 opU

@@ -99177,6 +99177,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/engineering/gravitygenerator)
+"xJt" = (
+/obj/machinery/poolcontroller/invisible,
+/turf/simulated/floor/plasteel/reactor_pool,
+/area/station/engineering/engine/reactor)
 "xJy" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
@@ -123232,7 +123236,7 @@ qXW
 mLQ
 cPK
 puO
-jEI
+xJt
 jEI
 bXU
 dmq

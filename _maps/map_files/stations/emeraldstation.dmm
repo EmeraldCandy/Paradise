@@ -22359,6 +22359,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/station/maintenance/apmaint2)
+"eyp" = (
+/obj/machinery/poolcontroller/invisible,
+/turf/simulated/floor/plasteel/reactor_pool,
+/area/station/engineering/engine/reactor)
 "eys" = (
 /obj/machinery/space_heater,
 /obj/effect/spawner/random/cobweb/left/rare,
@@ -133611,7 +133615,7 @@ nAj
 vGY
 cCx
 vwt
-hHD
+eyp
 hHD
 hWI
 kxw
