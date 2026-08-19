@@ -120170,6 +120170,10 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/hallway/secondary/entry/east)
+"xTW" = (
+/obj/machinery/poolcontroller/invisible/nuclear,
+/turf/simulated/floor/plasteel/reactor_pool,
+/area/station/engineering/engine/reactor)
 "xUc" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -133611,7 +133615,7 @@ nAj
 vGY
 cCx
 vwt
-hHD
+xTW
 hHD
 hWI
 kxw

@@ -81175,6 +81175,10 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/security/checkpoint)
+"qZq" = (
+/obj/machinery/poolcontroller/invisible/nuclear,
+/turf/simulated/floor/plasteel/reactor_pool,
+/area/station/engineering/engine/reactor)
 "qZr" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -123489,7 +123493,7 @@ cOm
 mDy
 cPK
 wCr
-jEI
+qZq
 jEI
 dUI
 dmq

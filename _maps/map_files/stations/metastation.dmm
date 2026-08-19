@@ -49288,6 +49288,10 @@
 	},
 /turf/simulated/floor/plasteel,
 /area/station/engineering/atmos)
+"jWb" = (
+/obj/machinery/poolcontroller/invisible/nuclear,
+/turf/simulated/floor/plasteel/reactor_pool,
+/area/station/engineering/engine/reactor)
 "jWg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -139473,7 +139477,7 @@ oWm
 rdm
 ujj
 vHR
-jMX
+jWb
 jMX
 jMX
 jMX
